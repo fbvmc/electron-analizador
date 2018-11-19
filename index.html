@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    
+  <form class="form-inline">
+    <div class="form-group mb-2">
+      <label for="textanalysis" class="sr-only"></label>
+      <input type="textarea" readonly class="form-control-plaintext" id="str2analysis" value="Miguel de Cervantes es un escritor del Siglo de Oro">
+    </div>
+    <input type="button" class="btn btn-primary mb-2" onclick="analysis()" value="Analizar texto"></input>
+  </form>
+
+
+    <div class="row" style="margin-top: 50px;">
+    <table class="table table-striped" id="records_table">
+      <tr>
+        <th style="width:30%">Palabra</th>
+        <th style="width:20%">Categoría gramatical</th>
+        <th style="width:50%">Descripción</th>
+      </tr>
+    </table>
+    </div>
+
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+    <script> let $ = require("jquery") </script>
+    <script src="./script.js"></script>
+  </body>
+</html>
