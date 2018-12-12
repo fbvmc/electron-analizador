@@ -17,7 +17,9 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^3.0.4"
+    "electron": "^3.0.4",
+    "electron-installer-snap": "^3.0.0",
+    "electron-packager": "^13.0.0"
   },
   "dependencies": {
     "bootstrap": "^4.1.3",

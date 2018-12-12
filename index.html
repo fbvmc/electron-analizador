@@ -42,9 +42,9 @@
   <form class="form-inline">
     <div class="form-group mb-2">
       <label for="textanalysis" class="sr-only"></label>
-      <input type="textarea" readonly class="form-control-plaintext" id="str2analysis" value="Miguel de Cervantes es un escritor del Siglo de Oro">
+      <input type="textarea" class="form-control-plaintext" id="str2analysis" value="Miguel de Cervantes es un escritor del Siglo de Oro">
     </div>
-    <input type="button" class="button big blue btn btn-primary mb-2" onclick="analysis()" value="Analizar texto"></input>
+    <input type="button" class="button big blue btn btn-primary mb-2" onclick="analysis(str2analysis.value)" value="Analizar texto"></input>
   </form>
 
 

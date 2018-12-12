@@ -10,12 +10,12 @@ $(function(){
 
 });
 
-function analysis() {
+function analysis(texto) {
 
     console.log('click button!!!!!');
     $("#records_table").find("tr:gt(0)").remove();
 
-    $.get('http://data.cervantesvirtual.com/NLPServlet?inputText=Me+encanta+el+autor+Miguel+de+Cervantes', function(response){
+    $.get('http://data.cervantesvirtual.com/NLPServlet?inputText='+texto, function(response){
 
         var data = $(response);
 
