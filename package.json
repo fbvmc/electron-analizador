@@ -1,23 +1,23 @@
 {
-  "name": "electron-quick-start",
+  "name": "electron-analizador",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Analizador sintáctico de la Biblioteca Virtual Miguel de Cervantes",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "build --linux snap"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/fbvmc/electron-analizador",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "analizador sintáctico",
+    "Biblioteca Virtual Miguel de Cervantes"
   ],
-  "author": "GitHub",
+  "author": "Fundación Biblioteca Virtual Miguel de Cervantes",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^3.0.4",
+    "electron-builder": "^20.38.3",
     "electron-installer-snap": "^3.0.0",
     "electron-packager": "^13.0.0"
   },
