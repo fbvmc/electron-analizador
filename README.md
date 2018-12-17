@@ -32,10 +32,16 @@ npm start
 Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
 
 ## Create a Snap package
+```bash
+# Prepare snap
 npm install --save-dev electron-builder
+# Create snap
 npm run dist
+# Install snap
 sudo snap install --dangerous dist/electron-analizador_1.0.0_amd64.snap
+# Run the app
 electron-analizador 
+```
 
 
 ## License
